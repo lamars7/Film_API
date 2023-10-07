@@ -1,0 +1,85 @@
+@font-face {
+  font-family: QuicksandFont;
+  src: url(fonts/Quicksand_Book.otf);
+  font-weight:bold;
+}
+
+@font-face {
+  font-family: MayekaFont;
+  src: url(fonts/Mayeka.otf);
+  font-weight:bold;
+}
+
+
+#table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 5% auto;
+  -webkit-font-smoothing: antialiased;
+  
+  border-radius:10px;
+  
+}
+
+
+#table td, #table th {
+  
+  border: 1px solid #000;
+  padding: 10px;
+ 
+
+}
+
+#table td {
+	font-family: QuicksandFont;
+}
+
+
+#table th {
+  background-color: #333; 
+  color: #fff;
+  font-family: MayekaFont;
+  
+}
+
+
+#table tr:hover {
+ background-color:#bbe2f0;
+}
+
+
+#table th:last-child {
+  display: none;
+}
+
+
+#table td:last-child {
+  border: none;
+  
+}
+
+#table button:first-child {
+  background-color: #ffc15e;
+}
+
+
+#table button:last-child {
+  background-color: #ed6647;
+}
+#table button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #00bfff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#table button img {
+  max-width: 100%;
+  max-height: 100%;
+}
+

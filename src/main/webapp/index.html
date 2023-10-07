@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="ISO-8859-1">
+      <title>The Movie Matrix</title>
+
+      <link rel="stylesheet" href='css/table.css'>
+      <link rel="stylesheet" href='css/nav.css'>
+      <link rel="stylesheet" href='css/forms.css'>
+      <link rel="stylesheet" href='css/pagination.css'>
+   </head>
+   <body>
+      <div id="topbar" >
+        
+         <div>
+            <form id='search-bar-form'>
+               <input name='search_input' class='input1' id="search-bar" type="text" placeholder="Search...">
+               <select name='search-option' id="select-movie-type">
+                  <option value="title">Title</option>
+                  <option value="stars">Stars</option>
+                  <option value="year">Year</option>
+               </select>
+               <button id='submit-search' name='search-movie-button' type="submit">Submit</button>
+            </form>
+         </div>
+     
+         <div id="text">The Movie Matrix</div>
+         
+         <div>
+            <button id="add-movie" onclick="showOverlay()">+ Add Film</button>
+            <select id="format-select">
+               <option value="JSON">JSON</option>
+               <option value="XML">XML</option>
+               <option value="Text">Text</option>
+            </select>
+         </div>
+      </div>
+      <table id="table">
+        
+         <thead>
+            <tr>
+               <th>Movie ID</th>
+               <th>Title</th>
+               <th>Review</th>
+               <th>Year</th>
+               <th>Director</th>
+               <th>Stars</th>
+               <th></th>
+         </thead>
+         <tbody>
+         </tbody>
+      </table>
+      <div id="add-movie-overlay">
+        
+         <form id='add-movie-form'>
+          
+            <label for="title">Name:</label><br>
+            <input type="text" id="name" name="title"><br>
+            <label for="year">Year:</label><br>
+            <input type="text" id="year" name="year"><br>
+            <label for="director">Director:</label><br>
+            <input type="text" id="director" name="director"><br>
+            <label for="stars">Stars:</label><br>
+            <input type="text" id="stars" name="stars"><br>
+            <label for="review">Review:</label><br>
+            <textarea id="review" name="review"></textarea>
+            <br>
+            <button name='save_movie' type="submit">Save Movie</button>
+            <button type='button' onclick='hideOverlay()'>Cancel</button>
+         </form>
+      </div>
+      <div id="edit-overlay">
+         
+         <form id='edit-movie-form'>
+            <label for="edit-id">ID:</label><br> 
+            <input type="text" id="edit-id" name="edit-id" readonly><br>
+            <label for="title">Name:</label><br> 
+            <input type="text" id="name" name="title"><br> 
+            <label for="year">Year:</label><br>
+            <input type="text" id="year" name="year"><br>
+            <label for="director">Director:</label><br> 
+            <input type="text" id="director" name="director"><br>
+            <label for="stars">Stars:</label><br>
+            <input type="text" id="stars" name="stars"><br> 
+            <label for="review">Review:</label><br>
+            <textarea id="review" name="review"></textarea><br>
+            <button name='save_movie' type="submit">Save Movie</button>
+            <button type='button' onclick='hideEditOverlay()'>Cancel</button>
+         </form>
+      </div>
+      <div id="delete-overlay">
+         
+         <form id='delete-movie-form'>
+            <label>Are you sure you want to delete this movie?</label>
+            <input type='hidden' value='' id='delete-movie-id' name='filmID'>
+            <button name='delete_movie' id='delete-button' type="submit">Continue</button>
+            <button type='button' onclick='hideDeleteOverlay()'>Cancel</button>
+         </form>
+      </div>
+      <div id="pagination">
+        
+      </div>
+      <script type="text/javascript" src="javascript/jquery-3.6.3.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+      <script type="text/javascript" src="javascript/getData.js"></script>
+   </body>
+</html>

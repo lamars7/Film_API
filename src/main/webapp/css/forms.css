@@ -1,0 +1,218 @@
+@font-face {
+  font-family: QuicksandFont;
+  src: url(fonts/Quicksand_Book.otf);
+  font-weight:bold;
+}
+
+#add-movie-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+    z-index: 1;
+  }
+  
+  #add-movie-overlay.show {
+    visibility: visible;
+  }
+  
+  #add-movie-overlay form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: QuicksandFont;
+  }
+  
+  #add-movie-overlay form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-family: QuicksandFont;
+  }
+  
+  #add-movie-overlay form input[type="text"],
+  #add-movie-overlay form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    font-family:QuicksandFont;
+  }
+  
+  #add-movie-overlay form textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  #add-movie-overlay form button {
+    display: block;
+    margin-top:3px;
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: QuicksandFont;
+  }
+  
+  #add-movie-overlay form button:hover {
+    background-color: #00bfff;
+  }
+  
+  
+  #edit-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+    z-index: 1;
+  }
+  
+  #edit-overlay.show {
+    visibility: visible;
+  }
+  
+  #edit-overlay form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 700px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: sans-sherif;
+  }
+  
+  #edit-overlay form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-family: QuicksandFont;
+  }
+  
+  #edit-overlay form input[type="text"],
+  #edit-overlay form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    font-family: QuicksandFont;
+  }
+  
+  #edit-overlay form textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  #edit-overlay form button {
+    display: block;
+    margin-top:3px;
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: QuicksandFont;
+  }
+  
+  #edit-overlay form button:hover {
+    background-color: #555;
+  }
+  
+   #delete-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+    z-index: 1;
+  }
+  
+  #delete-overlay.show {
+    visibility: visible;
+  }
+  
+  #delete-overlay form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 100px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: QuicksandFont;
+  }
+  
+  #delete-overlay form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-family: QuicksandFont;
+  }
+  
+  #delete-overlay form input[type="text"],
+  #delete-overlay form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    font-family: QuicksandFont;
+  }
+  
+
+  
+  #delete-overlay form button {
+    display: block;
+    margin-top:3px;
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: QuicksandFont;
+  }
+  
+  #delete-overlay form button[type='submit']:hover {
+    background-color: red;
+  }
+  
+    #delete-overlay form button[type='button']:hover {
+    background-color: #555;
+  }
+  
+  #delete-overlay label {
+  	text-align:center;
+  	font-family: QuicksandFont;
+  }
+  
+  
